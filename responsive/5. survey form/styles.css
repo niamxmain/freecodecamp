@@ -1,0 +1,20 @@
+body {
+    background: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header {
+    margin-top: 50px;
+}
+.container {
+    margin: auto;
+    padding: auto;
+}
+.text-center {
+    text-align: center;
+}
+form {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
