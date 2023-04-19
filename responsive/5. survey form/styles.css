@@ -1,20 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
-    background: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-header {
-    margin-top: 50px;
-}
-.container {
-    margin: auto;
-    padding: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+      120deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 .text-center {
-    text-align: center;
+  text-align: center;
+}
+.description {
+  margin: -15px 0 40px;
+}
+header {
+  display: block;
+}
+h1,
+p {
+  color: white;
+  font-weight: 400;
+}
+
+.container {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: auto;
+  padding: auto;
 }
 form {
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 600px;
+  background: rgba(27, 27, 50, 0.8);
+  border-radius: 0.25rem;
+}
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
 }
